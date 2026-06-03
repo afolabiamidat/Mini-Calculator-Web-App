@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Mini Calculator</h1>
+        
+        <div class="calculator">
+            <div class="input-group">
+                <label for="num1">First Number:</label>
+                <input type="number" id="num1" placeholder="Enter first number" step="0.01">
+            </div>
+            
+            <div class="input-group">
+                <label for="num2">Second Number:</label>
+                <input type="number" id="num2" placeholder="Enter second number" step="0.01">
+            </div>
+            
+            <div class="buttons-group">
+                <button class="btn btn-add" onclick="performCalculation('add')">➕ Add</button>
+                <button class="btn btn-subtract" onclick="performCalculation('subtract')">➖ Subtract</button>
+                <button class="btn btn-multiply" onclick="performCalculation('multiply')">✕ Multiply</button>
+                <button class="btn btn-divide" onclick="performCalculation('divide')">÷ Divide</button>
+            </div>
+            
+            <div class="result-group">
+                <h2>Result:</h2>
+                <div class="result" id="result">Enter numbers and select operation</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
